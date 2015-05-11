@@ -4,7 +4,7 @@
 void ofApp::setup(){
 	ofSetVerticalSync(true);
 	
-	int num = 5000;
+	int num = 7000;
     for(int i = 0; i < num;i++){
      p.push_back(demoParticle(style.getForgroundColor(), ofRandom(1, 5), (int)ofRandom(100, 255)));
     }
