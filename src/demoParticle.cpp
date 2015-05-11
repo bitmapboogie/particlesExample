@@ -55,7 +55,7 @@ void demoParticle::update(ofPoint attractPt){
 	}
 	else if( mode == PARTICLE_MODE_REPEL ){
 		//ofPoint attractPt(ofGetMouseX(), ofGetMouseY());
-		frc = attractPt-pos; 
+		frc = attractPt-pos;
 		
 		//let get the distance and only repel points close to the mouse
 		float dist = frc.length();

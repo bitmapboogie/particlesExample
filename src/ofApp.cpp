@@ -37,11 +37,11 @@ void ofApp::setup(){
 	}
 	
     // Thresholds
-    nearThreshold = 188; //230;
-	farThreshold = 102; //70;
+    nearThreshold = 255; //230;
+	farThreshold = 210; //70;
     
 	// Zero the tilt on startup
-	angle = 14;
+	angle = 0;
 	kinect.setCameraTiltAngle(angle);
     
     // Allocate images
@@ -109,7 +109,7 @@ void ofApp::update(){
         grayPreprocImage = grayImage;
 		// Process image
         
-        grayImage.mirror(false, true);
+        //grayImage.mirror(false, true);
         dilate(grayImage);
         dilate(grayImage);
         blur(grayImage, 5);
@@ -127,13 +127,13 @@ void ofApp::update(){
         
         // Update biggest contour -------------------------------------------------------------
         
-        attractPt.set(ofGetMouseX(), ofGetMouseY());
+        attractPt.set(ofGetScreenWidth()/2, ofGetScreenHeight()/2);
 
         int n = contourFinder.size();
         if (n > 0) {
             
             ofPolyline biggestPolyline = contourFinder.getPolyline(0); // The biggest one
-            
+
             // Scale polyline and add vertices
             for(int i=0;i< (int)biggestPolyline.size();i++){
                 biggestPolyline[i].x*= (ofGetWidth()/ 640);
