@@ -3,6 +3,8 @@
 #include "ofMain.h"
 #include "demoParticle.h"
 #include "Styling.h"
+#include "ofxKinect.h"
+#include "ofxCv.h"
 
 class ofApp : public ofBaseApp{
 
@@ -10,6 +12,7 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+        void exit();
 		void resetParticles();
 
 		void keyPressed  (int key);
@@ -22,6 +25,7 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
+        // Particle vars
 		particleMode currentMode;
 		string currentModeStr;
     
@@ -30,5 +34,21 @@ class ofApp : public ofBaseApp{
 		vector <demoParticle> p;
 		vector <ofPoint> attractPoints;
 		vector <ofPoint> attractPointsWithMovement;
-		
+    
+        // Kinect + OpenCV vars
+        ofxKinect kinect;
+        ofxCv::ContourFinder contourFinder;
+        
+        ofImage colorImg;
+        ofImage grayImage;         // grayscale depth image
+        ofImage grayThreshNear;    // the near thresholded image
+        ofImage grayThreshFar;     // the far thresholded image
+        ofImage grayPreprocImage;  // grayscale pre-processed image
+        // @ToDo : Scale polyline not image
+        ofImage grayImageScaled; // for getting the ize of our screen
+        int nearThreshold;
+        int farThreshold;
+        int angle;
+    
+        ofPoint attractPt;
 };
