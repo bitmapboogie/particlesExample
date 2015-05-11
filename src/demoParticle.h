@@ -17,7 +17,7 @@ class demoParticle{
 		void setAttractPoints( vector <ofPoint> * attract );
 
 		void reset();
-		void update();
+		void update(ofPoint attractPt);
 		void draw();		
 		
 		ofPoint pos;

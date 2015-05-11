@@ -5,18 +5,30 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>36981D7F-3515-4628-9C71-C2324DE4E679</string>
+=======
+	<string>905CFB90-EF39-4002-8305-56C567B875C2</string>
+>>>>>>> 18b49246455c8eba94061dc9c91104f48edfc542
 	<key>IDESourceControlProjectName</key>
 	<string>particlesExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>8B2788A6-C5BB-4A52-A4EA-3D78AF13C5D5</key>
 		<string>ssh://github.com/bitmapboogie/particlesExample.git</string>
+=======
+		<key>339ECC9B-BC5C-41BA-B88F-AFDC49FC91AF</key>
+		<string>https://github.com/kylemcdonald/ofxCv.git</string>
+		<key>A1CFB085-71A0-40BA-83FC-842F9B6ACADD</key>
+		<string>https://github.com/bitmapboogie/particlesExample.git</string>
+>>>>>>> 18b49246455c8eba94061dc9c91104f48edfc542
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>particlesExample.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>8B2788A6-C5BB-4A52-A4EA-3D78AF13C5D5</key>
 		<string>../..</string>
 	</dict>
@@ -26,13 +38,38 @@
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>8B2788A6-C5BB-4A52-A4EA-3D78AF13C5D5</string>
+=======
+		<key>339ECC9B-BC5C-41BA-B88F-AFDC49FC91AF</key>
+		<string>../../../../../addons/ofxCv</string>
+		<key>A1CFB085-71A0-40BA-83FC-842F9B6ACADD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bitmapboogie/particlesExample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A1CFB085-71A0-40BA-83FC-842F9B6ACADD</string>
+>>>>>>> 18b49246455c8eba94061dc9c91104f48edfc542
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>8B2788A6-C5BB-4A52-A4EA-3D78AF13C5D5</string>
+=======
+			<string>339ECC9B-BC5C-41BA-B88F-AFDC49FC91AF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxCv</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A1CFB085-71A0-40BA-83FC-842F9B6ACADD</string>
+>>>>>>> 18b49246455c8eba94061dc9c91104f48edfc542
 			<key>IDESourceControlWCCName</key>
 			<string>particlesExample</string>
 		</dict>

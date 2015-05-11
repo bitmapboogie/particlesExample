@@ -41,12 +41,12 @@ void demoParticle::reset(){
 }
 
 //------------------------------------------------------------------
-void demoParticle::update(){
+void demoParticle::update(ofPoint attractPt){
 
 	//1 - APPLY THE FORCES BASED ON WHICH MODE WE ARE IN 
 	
 	if( mode == PARTICLE_MODE_ATTRACT ){
-		ofPoint attractPt(ofGetMouseX(), ofGetMouseY());
+		//ofPoint attractPt(ofGetMouseX(), ofGetMouseY());
 		frc = attractPt-pos; // we get the attraction force/vector by looking at the mouse pos relative to our pos
 		frc.normalize(); //by normalizing we disregard how close the particle is to the attraction point 
 		
@@ -54,7 +54,7 @@ void demoParticle::update(){
 		vel += frc * 0.6; //apply force
 	}
 	else if( mode == PARTICLE_MODE_REPEL ){
-		ofPoint attractPt(ofGetMouseX(), ofGetMouseY());
+		//ofPoint attractPt(ofGetMouseX(), ofGetMouseY());
 		frc = attractPt-pos; 
 		
 		//let get the distance and only repel points close to the mouse
